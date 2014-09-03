@@ -47,7 +47,21 @@ int main( int argc, char* argv[] )
 
 		switch (eCurrentState
 		{
-		
+		case eMAIN_MENU:
+			DrawSprite(iArcadeMarquee);
+			DrawString(pkInserCoins, iScreenWidth *0.37f, iScreenHeight * 0.5f, 0.75f);
+			DrawString(pkCredits, iScreenWidth * 0.25f, iScreenHeight * 0.4f, 0.7f);
+
+			if (IsKeyDown(KEY_ENTER))
+			{
+				eCurrentState = eGAMEPLAY;
+			}
+			break;
+		case eGAMEPLAY:
+			if (IsKeyDown('A'))
+			{
+				fPlayerX -=
+			}
 		
 		})
 
